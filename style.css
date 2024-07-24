@@ -1,0 +1,517 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    border: border-box;
+}
+
+body {
+    background-color: #E3E6E6;
+}
+
+.loader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.666);
+    z-index: 999;
+}
+
+.load {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 20px solid white;
+    border-top: 10px solid blue;
+    animation: load 3s linear infinite;
+}
+
+@keyframes load {
+    0% {
+        rotate: 0deg;
+    }
+    100% {
+        rotate: 360deg;
+    }
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2,
+h3 {
+    font-size: 25px;
+}
+
+h4,
+p {
+    font-size: 15px;
+}
+
+/* <!-- -------------- NAVBAR CODE STRAT -------------- --> */
+
+nav {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0f1111;
+}
+
+nav i {
+    font-size: 20px;
+}
+
+
+.left-side,
+.right-side {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px 15px;
+    gap: 15px;
+    color: white;
+}
+
+.sign-up {
+    display: flex;
+    align-items: start;
+}
+
+.left-side img {
+    width: 120px;
+}
+
+.location-res {
+    padding: 10px 15px;
+    color: white;
+    background-color: #232F3E;
+}
+
+.location-res i {
+    font-size: 15px;
+}
+
+.location-res p {
+    font-size: 12px;
+}
+
+.navbar {
+    height: 60px;
+    padding: 5px;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-logo {
+    height: 35px;
+    width: 120px;
+    background-image: url(./images/amazon_logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.add-first {
+    color: #cccccc;
+    font-size: 0.85rem;
+}
+
+.add-icon {
+    display: flex;
+    align-items: center;
+}
+
+.nav-search {
+    display: flex;
+    justify-content: center;
+    /* margin-left: auto;
+    margin-right: auto; */
+    width: 620px;
+    height: 40px;
+}
+
+.search-select {
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none;
+}
+
+.search-select:hover {
+    cursor: pointer;
+    background-color: #d4d1d1;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+}
+
+.search-input:focus {
+    border: 2px solid orange;
+    outline: none;
+}
+
+.search-icon {
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: #febd68;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: #0f1111;
+}
+
+.search-icon:hover {
+    cursor: pointer;
+    background-color: #fcb456;
+}
+
+.nav-signin {
+    color: white;
+}
+
+.lang {
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.lang img {
+    width: 25px;
+}
+
+span {
+    font-size: 0.7rem;
+}
+
+.nav-return {
+    color: white;
+}
+
+.nav-sec {
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.sec-line {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.sec-line i {
+    font-size: 10px;
+    opacity: 60%;
+}
+
+.nav-cart i {
+    font-size: 30px;
+}
+
+.nav-cart {
+    color: white;
+    font-size: 0.85rem;
+}
+
+.border {
+    padding: 4px;
+    border: 1.5px solid transparent;
+    border-radius: 3px;
+}
+
+.border:hover {
+    cursor: pointer;
+    border: 1.5px solid white;
+}
+
+/* ---------------------------------------- */
+
+.bottom-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    color: white;
+    background-color: #232F3E;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.arrow {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    white-space: nowrap;
+}
+
+.special-option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.special-option #lemon {
+    color: #fcd256;
+    font-size: 30px;
+}
+
+.options .arrow,
+p,
+.special-option {
+    cursor: pointer;
+    padding: 2px;
+    border: 1.5px solid transparent;
+}
+
+.options p:hover {
+    border: 1.5px solid white;
+}
+
+.special-option:hover {
+    border: 1.5px solid white;
+}
+
+.arrow:hover {
+    border: 1.5px solid white;
+}
+
+.arrow p:hover {
+    border: 1.5px solid transparent;
+}
+
+/* <!-- -------------- NAVBAR CODE END -------------- --> */
+
+/* <!-- -------------- BANENR SECTION CODE END -------------- --> */
+
+.banner-sec {
+    /* position: absolute; */
+    width: 100%;
+    height: 550px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    background-image: url(./images/body-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-container-left {
+    max-width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 230px 0px;
+}
+
+.card-1,
+.card-2 {
+    width: 300px;
+    height: 370px;
+    padding: 20px 15px;
+    background-color: rgb(255, 255, 255);
+    margin: 20px 0px;
+}
+
+.card-1 h2 {
+    margin-bottom: 10px;
+}
+
+.card-2 h2 {
+    margin-bottom: 10px;
+}
+
+.card-1 p:hover {
+    cursor: pointer;
+    color: red;
+}
+
+.card-2 p:hover {
+    cursor: pointer;
+    color: red;
+}
+
+.card-1 img {
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+}
+
+.img-container {
+    width: 300px;
+    height: 295px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+/* .imgs {
+    margin: auto;
+    background-color: blue;
+} */
+
+.imgs img {
+    width: 120px;
+    height: 90px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    cursor: pointer;
+}
+
+.title p {
+    font-size: 10px;
+    font-weight: 600;
+    color: white;
+    background-color: red;
+}
+
+.title p:hover {
+    color: white;
+}
+
+.title h4 {
+    font-size: 10px;
+    color: red;
+}
+
+/* ----------------------------------------- */
+
+
+.card-container-right {
+    max-width: 80%;
+    margin: 255px 30px;
+}
+
+.box-1 {
+    width: fit-content;
+    padding: 20px 40px;
+    background-color: white;
+}
+
+.box-1 button {
+    border: none;
+    background-color: #FFD814;
+    text-align: center;
+    padding: 5px 80px;
+    border-radius: 5px;
+    margin: 10px 0px;
+}
+
+.box-1 button:hover {
+    cursor: pointer;
+    background-color: #fdd408;
+}
+
+.right-img {
+    width: 300px;
+    margin: 18px;
+}
+
+/* <!-- -------------- BANENR SECTION CODE END -------------- --> */
+
+/* <!-- -------------- FOOTER SECTION CODE START -------------- --> */
+
+footer {
+    margin-top: 600px;
+    background-color: #232F3E;
+}
+
+footer p {
+    width: 99.65%;
+    height: 20px;
+    text-align: center;
+    color: white;
+    background-color: #37475A;
+}
+
+.foot-container {
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 20p;
+    /* background-color: #232F3E; */
+    color: white;
+}
+
+.foot-content {
+    margin: 20px 0px;
+    line-height: 30px;
+}
+
+.foot-content ul a {
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.foot-content ul a:hover {
+    text-decoration: underline;
+}
+
+.foot-content ul {
+    list-style-type: none;
+}
+
+footer hr {
+    color: white;
+    margin: 20px 0px;
+}
+
+footer img {
+    width: 150px;
+    margin-left: 650px;
+}
+
+/* <!-- -------------- FOOTER SECTION CODE END -------------- --> */
+
+/* .swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
